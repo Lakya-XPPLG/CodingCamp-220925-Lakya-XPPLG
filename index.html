@@ -14,7 +14,7 @@
 
     <header class="flex items-center justify-between p-4 bg-blue-900 text-white">
         <!-- Logo -->
-        <div class="logo"></div>
+        <div class="logo bg-[url(/img/download.png)] bg-center"></div>
         <nav>
             <ul class="flex space-x-4 gap-2">
                 <li class="border p-2 rounded"><a href="#">Home</a></li>
@@ -23,18 +23,25 @@
             </ul>
         </nav>
     </header>
-
-
     <main>
-        <div class="container h-[578px] bg-white w-[100%] place-content-center text-center">
-            <h1 class="text-3xl font-bold mb-4 mt-3">Welcome to My Personal Web Page</h1>
-            <p class="mb-4">This is a simple personal web page created using HTML, CSS, and Tailwind CSS.</p>
+      <div class="Profile">
+        <div class="container h-[578px] w-[100%] place-content-center text-center">
+          <h1 class="text-3xl font-bold mb-4 mt-3 text-white shadow-lg">Welcome to My Personal Web Page</h1>
+          <p class="mb-4 text-white shadow-lg">This is a simple personal web page created using HTML, CSS, and Tailwind CSS.</p>
         </div>
-
+      </div>
+      <div class="h-[378px] bg-white w-[100%] text-left p-4">
+        <h2 class="text-2xl font-bold mb-4">Profile</h2>
+        <div class="logo_profile flex gap-8">
+            <img src="/img/download (2).jpeg" alt="Profile Picture" class="h-full w-full object-cover rounded-full">
+            <label for=""></label>
+            <img src="/img/download (2).jpeg" alt="Profile Picture" class="h-full w-full object-cover rounded-full">
+            <label for=""></label>
+            <img src="/img/download (2).jpeg" alt="Profile Picture" class="h-full w-full object-cover rounded-full">
+            <label for=""></label>
+        </div>
+      </div>
     </main>
-
-
-    <footer></footer>
 
 
     <script src="/scripts/script.js"></script>
