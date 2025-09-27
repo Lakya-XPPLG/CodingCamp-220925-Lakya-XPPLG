@@ -15,7 +15,7 @@
     <header class="flex items-center justify-between p-4 bg-blue-900 text-white">
         <!-- Logo -->
         <div class="logo bg-[url(/img/download.png)] bg-center"></div>
-        <h1 class="text-2xl font-bold">My Personal Web</h1>
+        <h1 class="text-2xl font-bold self-center">My Personal Web</h1>
         <nav>
             <ul class="flex space-x-4 gap-2">
                 <li class="border p-2 rounded"><a href="#home-section">Home</a></li>
@@ -25,30 +25,48 @@
         </nav>
     </header>
     <main>
-      <div class="Profile" id="home-section">
-        <div class="container h-[578px] w-[100%] place-content-center text-center">
-          <h1 class="text-3xl font-bold mb-4 mt-3 text-white shadow-lg">Welcome to My Personal Web Page</h1>
-          <p class="mb-4 text-white shadow-lg">This is a simple personal web page created using HTML, CSS, and Tailwind CSS.</p>
+        <div id="home-section" class="Profile">
+          <div class="container h-[578px] w-[100%] place-content-center text-center">
+            <h1 class="output text-3xl font-bold mb-4 mt-3 shadow-lg"></h1>
+            <h1 class="text-3xl font-bold mb-4 mt-3 shadow-lg">Welcome to My Personal Web Page</h1>
+            <p class="mb-4 shadow-lg">This is a simple personal web page created using HTML, CSS, and Tailwind CSS.</p>
+            <img src="/img/Foto.jpg" alt="Profile Picture" class="h-[300px] w-[300px] object-cover rounded-full mx-auto shadow-lg bg-top">
+          </div>
+          <div class="output mb-4 text-xl font-semibold place-self-start" >
+            Enter your name
+          </div>
+          <input type="text" name="name" id="nameInput" class="border p-2 rounded place-self-start" placeholder="Your Name">
+          <button id="submitButton" class="border p-2 rounded bg-blue-900 text-white place-self-start">Submit</button>
         </div>
-      </div>
-      <div class="h-[378px] bg-white w-[100%] text-left p-4" id="profile">
-        <h2 class="text-2xl font-bold mb-4">Profile</h2>
-        <div class="logo_profile flex gap-8">
-            <img src="/img/download (2).jpeg" alt="Profile Picture" class="h-full w-full object-cover rounded-full">
-            <label for=""></label>
-            <img src="/img/download (2).jpeg" alt="Profile Picture" class="h-full w-full object-cover rounded-full">
-            <label for=""></label>
-            <img src="/img/download (2).jpeg" alt="Profile Picture" class="h-full w-full object-cover rounded-full">
-            <label for=""></label>
+        <hr>
+        <div id="profile-section">
+          <div class="h-[378px] bg-white w-[100%] text-left p-4 table">
+            <h2 class="text-2xl font-bold mb-4">Profile</h2>
+            <div class="flex flex-col gap-4">
+              <div class="logo_profile flex flex-row gap-[100px] items-center justify-start">
+                <img src="/img/download (2).jpeg" alt="Profile Picture" class="h-full w-full object-cover rounded-full">
+                <img src="/img/oklahoma-city-thunder-chesapeake-energy-arena-floorjpg.jpg" alt="Profile Picture" class="h-full w-full object-cover rounded-full">
+                <img src="/img/Oklahoma City Thunder🏀🔥OKC🔥NBA Wallpaper📸.jpeg" alt="Profile Picture" class="h-full w-full object-cover rounded-full">
+              </div>
+              <div class="flex flex-row justify-start mr-12 gap-[244px] relative items-center">
+                <label for="">Trophy</label>
+                <label for="">Arena</label>
+                <label for="">Team</label>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="h-[378px] bg-white w-[100%] text-left p-4" id="message">
-        <h1>Message Us</h1>
-        <div class="message_us flex gap-8 mt-4 mb-4">
-            <label for="message" class="sr-only">Message</label>
-            <input type="text" class="border p-2 rounded" placeholder="Your message here">
-            <button class="border p-2 rounded bg-blue-900 text-white" type="submit">Send</button>
-      </div>
+        <hr>
+        <div id="message-section">
+          <div class="h-[378px] bg-white w-[100%] text-left p-4">
+            <h1>Message Us</h1>
+            <div class="message_us flex gap-8 mt-4 mb-4">
+              <label for="message" class="sr-only">Message</label>
+              <input type="text" class="border p-2 rounded" placeholder="Your message here">
+              <button class="border p-2 rounded bg-blue-900 text-white" type="submit" name="send">Send</button>
+            </div>
+          </div>
+        </div>
     </main>
 
 
